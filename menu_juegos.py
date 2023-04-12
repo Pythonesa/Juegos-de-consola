@@ -1,10 +1,12 @@
 import adivina_el_numero
 import ahorcado
+import adivina_la_palabra
 
 def print_menu():
     print('Estas son las opciones de juegos para ti:')
     print('1 - Adivina el número.')
     print('2 - Ahorcado.')
+    print('3 - Adivina la palabra.')
     print('Para salir presiona q')
 
 def print_fin_juego():
@@ -21,6 +23,9 @@ def init():
                 print_fin_juego()
             case '2':
                 ahorcado.jugar()
+                print_fin_juego()
+            case '3':
+                adivina_la_palabra.jugar()
                 print_fin_juego()
             case 'q' | 'Q':
                 break
